@@ -186,9 +186,14 @@ require 'about_symbols'
  
 require 'about_regular_expressions'
 
+    1. 
+    will need to revist regular expressions
+
 *******************************************************************************
  
 require 'about_methods'
+    1. 
+    Will need to revist about_methods
 
 *******************************************************************************
  
