@@ -215,8 +215,20 @@ require 'about_constants'
 *******************************************************************************
  
 
-
 require 'about_control_statements'
+
+    1.
+    : is a symbol
+    
+    2.
+    next just says 'skips whatever is below here and go back to the top of the loop'
+
+    3. 
+    .upcase .downcase .capitalize .titleize
+
+*******************************************************************************
+
+
 require 'about_true_and_false'
 require 'about_triangle_project'
 require 'about_exceptions'
