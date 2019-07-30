@@ -170,6 +170,17 @@ require 'about_strings'
 *******************************************************************************
  
 require 'about_symbols'
+    1.
+    A symbol is like a string, except strings are used to work with data, and symbols are identifiers
+    One of the most common uses for symbols is to represent method & instance variable names.
+
+    2.to convert a symbol to a string, use .to_sym
+
+    3. symbols do not have string methods
+
+    4. identical symbols have the same id (because they are the same object)
+
+
 
 *******************************************************************************
  
