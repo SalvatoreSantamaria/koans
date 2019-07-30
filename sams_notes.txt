@@ -1,0 +1,210 @@
+require 'about_asserts'
+
+    1.
+    the better way to compare equality is:
+    expected_value = 2
+    actual_value = 1 + 1
+
+    assert_equal expected_value, actual_value
+
+*******************************************************************************
+require 'about_nil'
+
+    1. 
+    nil is null
+
+    2.
+    # Is it better to use
+    #    obj.nil? #this is more readable!!!!
+    # or
+    #    obj == nil 
+    # Why?
+    obj.nil? #this is more readable!!!!
+
+
+
+
+*******************************************************************************
+
+require 'about_objects'
+
+    1. 
+    everything is an object!
+
+    2. every object has an id
+
+    3. small integers have fixed ids.
+
+    4. .clone creates a different object with an different id
+
+*******************************************************************************
+ 
+
+require 'about_arrays'
+
+    1. creating arrays 
+    empty_array = Array.new
+    assert_equal Array, empty_array.class
+    assert_equal 0, empty_array.size
+
+    2.
+    this is an array ['one', 'two', 'three']
+
+    3.
+    some array methods:
+    array[0]
+    array.first
+    array.last
+    array[-1] is the last element of the array
+    array[-3] is the -3 element of the array
+    .to_a #convert to an array 
+    #can get a range with (1...5).to_a
+    #can slice with ranges by using some_array[0...5]
+    array.push
+    array.pop 
+    array.shift 
+    array.unshift
+
+
+    4.
+    array slicing
+
+    array = [:peanut, :butter, :and, :jelly]
+
+    assert_equal [:peanut], array[0,1]
+    assert_equal [:peanut, :butter], array[0,2]
+    assert_equal [:and, :jelly], array[2,2]
+    assert_equal [:and, :jelly], array[2,20]
+    assert_equal [], array[4,0]
+    assert_equal [], array[4,100]
+    assert_equal nil, array[5,0]
+
+
+*******************************************************************************
+ 
+
+require 'about_array_assignment'
+
+    1.
+    first_name, last_name = ["John", "Smith"]
+    assert_equal "John", first_name
+    assert_equal "Smith", last_name
+
+*******************************************************************************
+ 
+require 'about_hashes'
+
+    1.
+    hash = { :one => "uno", :two => "dos" }
+    assert_equal "uno", hash[:one]
+    assert_equal "dos", hash[:two]
+    assert_equal nil, hash[:doesnt_exist]
+
+    # THINK ABOUT IT:
+    #
+    # Why might you want to use #fetch instead of #[] when accessing hash keys?
+    #fetch  will return default value? not sure
+
+
+    2.
+    changing hashes 
+
+    hash = { :one => "uno", :two => "dos" }
+    hash[:one] = "eins"
+
+    expected = { :one => "eins", :two => "dos" }
+    assert_equal true, expected == hash
+
+    3.
+    hashes have keys and values
+    hash = { :key => "value" }
+
+    4.
+    can combine hashes with .merge() #some_hash.merge({ :key => "value" })
+
+
+
+
+*******************************************************************************
+ 
+require 'about_strings'
+
+    1.
+    shovel operater modifies the original string: 
+    hi = "Hello, "
+    there = "World"
+    hi << there
+    assert_equal "Hello, World", hi
+    assert_equal "World", there
+
+    2. 
+    string interpolation
+    value = 123
+    string = "The value is #{value}"
+    assert_equal "The value is 123", string
+
+    3.
+    string = "Bacon, lettuce and tomato"
+    assert_equal "a", string[1]
+
+    4. 
+    strings can be split
+    string = "Sausage Egg Cheese"
+    words = string.split
+    assert_equal ["Sausage", "Egg", "Cheese"], words
+
+    5. strings can be split with different patterns
+    string = "the:rain:in:spain"
+    words = string.split(/:/)
+    assert_equal ["the", "rain", "in", "spain"], words
+
+    6.
+    .join()
+    words = ["Now", "is", "the", "time"]
+    assert_equal "Now is the time", words.join(" ")
+
+    7.
+    strings are unique objects
+
+
+*******************************************************************************
+ 
+require 'about_symbols'
+
+*******************************************************************************
+ 
+require 'about_regular_expressions'
+
+*******************************************************************************
+ 
+require 'about_methods'
+
+*******************************************************************************
+ 
+in_ruby_version("2") do
+  require 'about_keyword_arguments'
+end
+require 'about_constants'
+require 'about_control_statements'
+require 'about_true_and_false'
+require 'about_triangle_project'
+require 'about_exceptions'
+require 'about_triangle_project_2'
+require 'about_iteration'
+require 'about_blocks'
+require 'about_sandwich_code'
+require 'about_scoring_project'
+require 'about_classes'
+require 'about_open_classes'
+require 'about_dice_project'
+require 'about_inheritance'
+require 'about_modules'
+require 'about_scope'
+require 'about_class_methods'
+require 'about_message_passing'
+require 'about_proxy_object_project'
+require 'about_to_str'
+in_ruby_version("jruby") do
+  require 'about_java_interop'
+end
+require 'about_extra_credit'
