@@ -263,9 +263,28 @@ require 'about_triangle_project_2'
     1. 
     raise error is like returning an error
 
-
-
 require 'about_iteration'
+
+*******************************************************************************
+ 
+    1.
+    each is a method on array
+
+    2.
+    .collect() or .map() (same thing)
+    Invokes the given block once for each element of self.
+
+    3.
+    .sellect() or .find_all()
+    select selects certain items from an array, 
+
+    4. .find
+    locates first element matching a criteria
+
+    5. .inject(), .reduce()
+    performs operations on all items together
+
+
 require 'about_blocks'
 require 'about_sandwich_code'
 require 'about_scoring_project'
