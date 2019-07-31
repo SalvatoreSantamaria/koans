@@ -296,8 +296,16 @@ require 'about_blocks'
     The yield keyword — in association with a block — allows to pass a set of additional instructions during a method invocation.
 This mechanism allows you to customise a method depending on your needs.
 
+*******************************************************************************
+ 
 
 require 'about_sandwich_code'
+
+    1. will need a video walkthrough
+
+*******************************************************************************
+ 
+
 require 'about_scoring_project'
 require 'about_classes'
 require 'about_open_classes'
@@ -313,3 +321,22 @@ in_ruby_version("jruby") do
   require 'about_java_interop'
 end
 require 'about_extra_credit'
+
+
+various:
+
+1.
+next is like continue in other languages
+
+2.
+for cases, make sure to include exit 
+
+case greeting 
+when "Spanish",
+    puts "Hola"
+    exit
+
+3. ternary operator is ?
+
+
+
