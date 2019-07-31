@@ -233,11 +233,22 @@ require 'about_true_and_false'
     1.
     nil is false, looks like most everything else is true
 
+    2. nil = false
+    empty array is false
+
+    can open ruby console when in rails (rails console) irb to test
+
 
 *******************************************************************************
 
 
 require 'about_triangle_project'
+
+*******************************************************************************
+
+    1.
+    remember that if else need end statements 
+
 require 'about_exceptions'
 require 'about_triangle_project_2'
 require 'about_iteration'
