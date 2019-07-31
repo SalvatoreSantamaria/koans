@@ -285,7 +285,18 @@ require 'about_iteration'
     performs operations on all items together
 
 
+*******************************************************************************
+ 
 require 'about_blocks'
+
+    1.
+    block is any code through do and end
+
+    2. 
+    The yield keyword — in association with a block — allows to pass a set of additional instructions during a method invocation.
+This mechanism allows you to customise a method depending on your needs.
+
+
 require 'about_sandwich_code'
 require 'about_scoring_project'
 require 'about_classes'
