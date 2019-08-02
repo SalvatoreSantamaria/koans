@@ -37,7 +37,7 @@ def score(dice)
   end
  score = 0
  dice.sort
-  a = 0
+
 loop while a > dice.length
   a += 1
   fives_counter = 0
