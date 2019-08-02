@@ -307,11 +307,42 @@ require 'about_sandwich_code'
  
 
 require 'about_scoring_project'
+
+
+    1. 
+    was able to complete will if else chain. hash solution possible but unattempted
+
+*******************************************************************************
+ 
 require 'about_classes'
+
+    1.
+    see notes in file.
+
+
+*******************************************************************************
+ 
+
 require 'about_open_classes'
 require 'about_dice_project'
+
+
+*******************************************************************************
+ 
+
 require 'about_inheritance'
+    1.
+    works the same as javascript. does inherit from classes, and super modifies the parent class
+
+*******************************************************************************
+ 
+
 require 'about_modules'
+
+
+*******************************************************************************
+ 
+
 require 'about_scope'
 require 'about_class_methods'
 require 'about_message_passing'
