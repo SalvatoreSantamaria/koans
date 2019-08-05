@@ -168,7 +168,7 @@ class AboutClassMethods < Neo::Koan
 
   def test_heres_an_easy_way_to_call_class_methods_from_instance_methods
     fido = Dog.new #new Dog class named fido
-    assert_equal :still_another_way, fido.class.another_class_method
+    assert_equal :still_another_way, fido.class.another_class_method 
   end
 
 end
